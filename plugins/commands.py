@@ -28,31 +28,34 @@ from signal import SIGINT
 U=USERNAME
 CHAT=Config.CHAT
 msg=Config.msg
-HOME_TEXT = "<b>Hello, [{}](tg://user?id={})\n\nI am 24×7 Non Stop Radio/Music Player.\n\nHits /help for more details...</b>"
+HOME_TEXT = "<b>Hello, [{}](tg://user?id={})\n\nRedau muzică 24×7 Radio/Music Player.\n\nApasă /help pentru mai multe detalii.</b>"
 HELP = """
-**User Commands:**
-▷/play **[song name]/[yt link]**: Reply to an audio file.
-▷/dplay **[song name]:** Play music from Deezer.
-▷/player:  Show current playing song.
-▷/help: Show help for commands.
-▷/playlist: Shows the playlist.
+**<b>Muzică pe VoiceChat</b>:**
 
-**Admin Commands:**
-▷/skip **[n]** ...  Skip current or n where n >= 2
-▷/join: Join voice chat.
-▷/leave: Leave current voice chat
-▷/vc: Check which VC is joined.
-▷/stop: Stop playing.
-▷/radio: Start Radio.
-▷/stopradio: Stops Radio Stream.
-▷/replay: Play from the beginning.
-▷/clean: Remove unused RAW PCM files.
-▷/pause: Pause playing.
-▷/resume: Resume playing.
-▷/volume: Change volume(0-200).
-▷/mute: Mute in VC.
-▷/unmute: Unmute in VC.
-▷/restart: Restarts the Bot.
+**<b>Comenzi membri</b>:**
+
+▷/play **[nume melodie]/[yt link]**: ca răspuns unui fișier audio.
+▷/dplay **[nume melodie]:** Redare muzică din Deezer.
+▷/player:  Arată melodia în curs.
+▷/help: Ajutor comenzi.
+▷/playlist: Arată playlist-ul.
+
+**<b>Comenzi Admini</b>:**
+▷/skip: Omiteți melodia curentă sau /skip n(n= nr. meoldiei din playlist) 
+▷/join: Alăturați-vă chatului vocal.
+▷/leave: Părăsiți chatul vocal actual.
+▷/vc: Verificați ce VC este asociat.
+▷/stop: Opriți redarea.
+▷/radio: Porniți Radio.
+▷/stopradio: Oprește fluxul radio.
+▷/replay: Redați de la început.
+▷/clean: Eliminați fișierele RAW PCM neutilizate.
+▷/pause: Întrerupeți redarea.
+▷/resume: Reluați redarea.
+▷/volume: Schimbați volumul (0-200).
+▷/mute: Mute în VC.
+▷/unmute: Activați redarea în VC.
+▷/restart: Repornește botul. 
 """
 
 
@@ -61,14 +64,14 @@ HELP = """
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/LushaiMusic/VCMusicPlayer'),
+        InlineKeyboardButton("🇷🇴România HUB", url='https://t.me/romaniahub'),
     ],
     [
-        InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
+        InlineKeyboardButton('👥 Grup', url='https://t.me/romuzicaro'),
         InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
     ],
     [
-        InlineKeyboardButton('🆘 Help & Commands 🆘', callback_data='help'),
+        InlineKeyboardButton('🆘 Ajutor & Comenzi 🆘', callback_data='help'),
 
     ]
     ]
@@ -82,14 +85,15 @@ async def start(client, message):
 async def show_help(client, message):
     buttons = [
         [
-            InlineKeyboardButton("🔥 Source Code 🔥", url='https://github.com/LushaiMusic/VCMusicPlayer'),
+            InlineKeyboardButton("🇷🇴România HUB", url='https://github.com/LushaiMusic/VCMusicPlayer'),
         ],
         [
-            InlineKeyboardButton('👥 Group', url='https://t.me/iZaute/5'),
+            InlineKeyboardButton('👥 Without Borders', url='https://t.me/withoutbordershub'),
             InlineKeyboardButton('Channel 📢', url='https://t.me/iZaute/6'),
         ],
         [
-            InlineKeyboardButton('🔰 How to Deploy 🔰', url='https://t.me/c/1481808444/131'),
+            InlineKeyboardButton('↗️ Distribuie grupul ↗️ 🔰', url='https://t.me/share/url?url=t.me/romuzicaro'),
+            InlineKeyboardButton('🔰 Contact 🔰', url='http://t.me/HubContactBot'),
         
         ]
     ]

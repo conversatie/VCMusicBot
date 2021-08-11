@@ -81,7 +81,7 @@ async def start(client, message):
 
 
 
-@Client.on_message(filters.command(["help", f"help@{U}"]))
+@Client.on_message(filters.command(["ajutor", f"help@{U}"]))
 async def show_help(client, message):
     buttons = [
         [

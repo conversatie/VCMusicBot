@@ -47,7 +47,7 @@ HELP = """
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
-    if query.from_user.id not in Config.ADMINS and query.data != "help":
+    if query.from_user.id not in Config.ADMINS and query.data != "ajutor":
         await query.answer(
             "Who the hell you are",
             show_alert=True

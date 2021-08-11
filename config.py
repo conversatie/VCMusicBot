@@ -58,7 +58,7 @@ class Config:
     DURATION_LIMIT=int(os.environ.get("MAXIMUM_DURATION", 120))
     DELAY = int(os.environ.get("DELAY", 10))
     API_HASH = os.environ.get("API_HASH", "6e04739d66a87f305207247d39875887")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1842527431:AAHzfatT8Lpa-t00tghEHnpPzpzCwL0xDNI") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "1920790228:AAF0PFC4_HrbaMuPgUWrFD20GEpi0xwPsjg") 
     SESSION = os.environ.get("SESSION_STRING", "BAC1roB8z8C3Tjaj5HKohpJvVl0q7COw_5fYS4Df5zSsCzymEO-E7XHUDn7V7aDxqkyTsyAzoYFmLSqpteERvvMRMw7ItcLb9AzeXTyS6ZgdzS4hm1rHoyWQlmUdCGTd4oo5x5pArk50xymUEuflZ9h7PFidptMsfC4Sp6b8yLqTlILAEN1ZEzWStp3U0XHyzkcAUbCTyGjB5s6RV1uQdvQvNxWMj-w5dbq9x-qfF2O3czAVICJo2gGd29KvNaJ6kzX46nbayw4l5HIlEj0Aiply5PvShcysFzVVO9MdPSEzAyHyktdvCMAZkK2RYLATlB9hSuUQEZmKKdHNfjBcp7OqaFaYTQA")
     playlist=[]
     msg = {}
